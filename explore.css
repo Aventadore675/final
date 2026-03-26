@@ -1,77 +1,109 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap');
+
+* {
+    box-sizing: border-box;
     margin: 0;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: #f5f5f5;
-    text-align: center;
-    padding: 40px 20px;
+    padding: 0;
 }
 
-h1 {
-    font-size: 36px;
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background: #ffffff;
+    color: #000;
+    line-height: 1.6;
+}
+
+.explore-header {
+    text-align: center;
+    padding: 80px 20px 40px;
+}
+
+.explore-header h1 {
+    font-size: 42px;
+    font-weight: 800;
+    letter-spacing: -1.5px;
     margin-bottom: 10px;
 }
 
-.subtitle {
+.explore-header p {
     color: #666;
-    margin-bottom: 40px;
+    font-size: 18px;
 }
 
-/* GRILLE D'EXPLORATION */
+/* GRILLE DE DESTINATIONS */
 .explore-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
-    max-width: 1100px;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-.explore-item {
-    background: white;
-    border-radius: 15px;
-    overflow: hidden; /* Pour que l'image ne dépasse pas des coins arrondis */
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-    transition: transform 0.3s ease;
+.destination-card {
+    position: relative;
+    height: 450px;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+.destination-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.destination-card:hover img {
+    transform: scale(1.1);
+}
+
+.destination-card:hover {
+    transform: translateY(-5px);
+}
+
+/* EFFET OVERLAY TEXTE SUR IMAGE */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 40px 20px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    color: white;
     text-align: left;
 }
 
-.explore-item:hover {
-    transform: translateY(-8px);
+.overlay h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 5px;
 }
 
-.explore-item img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.explore-content {
-    padding: 20px;
-}
-
-.explore-content h3 {
-    margin: 0 0 10px 0;
-    font-size: 20px;
-}
-
-.explore-content p {
-    color: #777;
+.overlay p {
     font-size: 14px;
-    line-height: 1.5;
-    margin: 0;
+    opacity: 0.8;
 }
 
-.btn-back {
-    display: inline-block;
-    margin-top: 50px;
-    padding: 12px 25px;
-    background: black;
-    color: white;
+/* FOOTER */
+.footer-explore {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.btn-home {
     text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    border: 2px solid #000;
+    padding: 12px 30px;
     border-radius: 50px;
-    font-weight: bold;
-    transition: background 0.3s;
+    transition: all 0.3s;
 }
 
-.btn-back:hover {
-    background: #333;
+.btn-home:hover {
+    background: #000;
+    color: #fff;
 }
