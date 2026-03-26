@@ -4,34 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Become a Driver - Move</title>
-    <link rel="stylesheet" href="style-driver.css">
+    <link rel="stylesheet" href="driver-style.css">
 </head>
 <body>
 
     <div class="signup-container">
-        <h1>Join Move as a Driver</h1>
-        <p>Start earning money on your own schedule.</p>
+        <div class="badge">Earning Opportunity</div>
+        <h1>Join the Fleet</h1>
+        <p>Drive when you want, earn what you need.</p>
         
         <form>
             <div class="input-group">
                 <label>Full Name</label>
-                <input type="text" placeholder="John Doe" required>
+                <input type="text" placeholder="e.g. Alex Johnson" required>
             </div>
             
             <div class="input-group">
                 <label>Email Address</label>
-                <input type="email" placeholder="name@example.com" required>
+                <input type="email" placeholder="alex@example.com" required>
             </div>
 
             <div class="input-group">
-                <label>Vehicle Model</label>
-                <input type="text" placeholder="e.g. Tesla Model 3" required>
+                <label>Vehicle Type</label>
+                <select required>
+                    <option value="" disabled selected>Select your vehicle</option>
+                    <option value="sedan">Sedan (Standard)</option>
+                    <option value="suv">SUV (XLarge)</option>
+                    <option value="luxury">Luxury (Black)</option>
+                </select>
             </div>
             
-            <button type="submit" class="btn-driver">Register Now</button>
+            <button type="submit" class="btn-driver">Start Application</button>
         </form>
         
-        <a href="index.html" class="back-home">← Back to home page</a>
+        <a href="index.html" class="back-home">← Return to Homepage</a>
     </div>
 
 </body>
