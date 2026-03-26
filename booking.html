@@ -2,20 +2,37 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Réserver un trajet - Move</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section>
-        <h1>Réserver un trajet</h1>
-        <p>Où voulez-vous aller ?</p>
-        <form style="display: flex; flex-direction: column; max-width: 300px; margin: 0 auto; gap: 10px;">
-            <input type="text" placeholder="Départ" style="padding: 10px;">
-            <input type="text" placeholder="Destination" style="padding: 10px;">
-            <button type="submit" class="btn">Rechercher un chauffeur</button>
+
+    <div class="booking-container">
+        <h1>Book a ride</h1>
+        <p>Enter your trip details</p>
+        
+        <form>
+            <div class="form-group">
+                <label>Pickup Location</label>
+                <input type="text" placeholder="Where from?" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Destination</label>
+                <input type="text" placeholder="Where to?" required>
+            </div>
+
+            <div class="form-group">
+                <label>Date & Time</label>
+                <input type="datetime-local" required>
+            </div>
+            
+            <button type="submit" class="btn-submit">Confirm Ride</button>
         </form>
-        <br>
-        <a href="index.html">← Retour à l'accueil</a>
-    </section>
+        
+        <a href="index.html" class="back-link">← Back to home</a>
+    </div>
+
 </body>
 </html>
