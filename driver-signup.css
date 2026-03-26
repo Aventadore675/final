@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap');
 
-body {
+* {
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
+}
+
+body {
     font-family: 'Plus Jakarta Sans', sans-serif;
-    background: #000;
-    color: #fff;
+    background: #0a0a0a;
+    color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,81 +18,104 @@ body {
 }
 
 .signup-container {
-    background: #111;
-    border: 1px solid #333;
-    padding: 60px;
-    border-radius: 30px;
+    background: #141414;
+    border: 1px solid #2a2a2a;
+    padding: 50px 40px;
+    border-radius: 32px;
     width: 100%;
-    max-width: 500px;
+    max-width: 480px;
     text-align: center;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+}
+
+.badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    padding: 6px 16px;
+    border-radius: 100px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 38px;
     font-weight: 800;
-    margin-bottom: 15px;
-    background: linear-gradient(to right, #fff, #888);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    margin-bottom: 12px;
+    letter-spacing: -1.5px;
 }
 
 p {
-    color: #999;
-    font-size: 18px;
+    color: #888;
+    font-size: 16px;
     margin-bottom: 40px;
 }
 
 .input-group {
-    margin-bottom: 20px;
+    margin-bottom: 24px;
     text-align: left;
 }
 
 label {
     display: block;
     margin-bottom: 8px;
-    font-size: 14px;
-    color: #ccc;
+    font-size: 13px;
+    font-weight: 600;
+    color: #aaa;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
-input {
+input, select {
     width: 100%;
     padding: 16px;
-    background: #222;
-    border: 1px solid #444;
-    border-radius: 12px;
+    background: #1f1f1f;
+    border: 1px solid #333;
+    border-radius: 14px;
     color: #fff;
     font-size: 16px;
-    transition: 0.3s;
-    box-sizing: border-box;
+    transition: all 0.3s ease;
 }
 
-input:focus {
+input:focus, select:focus {
     outline: none;
     border-color: #fff;
+    background: #252525;
 }
 
 .btn-driver {
-    background: #fff;
-    color: #000;
+    background: #ffffff;
+    color: #000000;
     border: none;
     padding: 20px;
-    border-radius: 12px;
+    border-radius: 14px;
     font-weight: 800;
-    font-size: 16px;
+    font-size: 17px;
     cursor: pointer;
     width: 100%;
-    margin-top: 20px;
-    transition: all 0.3s;
+    margin-top: 10px;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .btn-driver:hover {
-    background: #e0e0e0;
+    background: #e5e5e5;
     transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(255,255,255,0.1);
 }
 
 .back-home {
     display: block;
-    margin-top: 30px;
-    color: #666;
+    margin-top: 35px;
+    color: #555;
     text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.back-home:hover {
+    color: #fff;
 }
