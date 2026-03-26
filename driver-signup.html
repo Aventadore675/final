@@ -2,20 +2,37 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Devenir Chauffeur - Move</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Become a Driver - Move</title>
+    <link rel="stylesheet" href="style-driver.css">
 </head>
 <body>
-    <section>
-        <h1>Devenir Chauffeur</h1>
-        <p>Inscrivez-vous pour commencer à gagner de l'argent.</p>
-        <form style="display: flex; flex-direction: column; max-width: 300px; margin: 0 auto; gap: 10px;">
-            <input type="text" placeholder="Nom complet" style="padding: 10px;">
-            <input type="email" placeholder="Email" style="padding: 10px;">
-            <button type="submit" class="btn">Envoyer ma candidature</button>
+
+    <div class="signup-container">
+        <h1>Join Move as a Driver</h1>
+        <p>Start earning money on your own schedule.</p>
+        
+        <form>
+            <div class="input-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="John Doe" required>
+            </div>
+            
+            <div class="input-group">
+                <label>Email Address</label>
+                <input type="email" placeholder="name@example.com" required>
+            </div>
+
+            <div class="input-group">
+                <label>Vehicle Model</label>
+                <input type="text" placeholder="e.g. Tesla Model 3" required>
+            </div>
+            
+            <button type="submit" class="btn-driver">Register Now</button>
         </form>
-        <br>
-        <a href="index.html">← Retour à l'accueil</a>
-    </section>
+        
+        <a href="index.html" class="back-home">← Back to home page</a>
+    </div>
+
 </body>
 </html>
