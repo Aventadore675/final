@@ -2,41 +2,46 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore the City - Move</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="explore.css">
 </head>
 <body>
 
-    <h1>Explore the City</h1>
-    <p class="subtitle">Discover the best spots with Move.</p>
+    <header class="explore-header">
+        <h1>Discover Your City</h1>
+        <p>The most beautiful destinations, just a ride away.</p>
+    </header>
 
     <div class="explore-grid">
-        <div class="explore-item">
+        <div class="destination-card">
             <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a" alt="Paris">
-            <div class="explore-content">
+            <div class="overlay">
                 <h3>Historic Center</h3>
-                <p>Visit the most iconic monuments and enjoy the classical architecture.</p>
+                <p>Monuments & Architecture</p>
             </div>
         </div>
 
-        <div class="explore-item">
+        <div class="destination-card">
             <img src="https://images.unsplash.com/photo-1555109307-f7d9da25c244" alt="Business">
-            <div class="explore-content">
-                <h3>Business District</h3>
-                <p>The heart of the city's economy. Modern skyscrapers and great coffee.</p>
+            <div class="overlay">
+                <h3>Modern District</h3>
+                <p>Skyscrapers & Skyline</p>
             </div>
         </div>
 
-        <div class="explore-item">
+        <div class="destination-card">
             <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b" alt="Nightlife">
-            <div class="explore-content">
-                <h3>Nightlife & Food</h3>
-                <p>The best restaurants and bars to enjoy your evening to the fullest.</p>
+            <div class="overlay">
+                <h3>Nightlife</h3>
+                <p>Bars & Restaurants</p>
             </div>
         </div>
     </div>
 
-    <a href="index.html" class="btn-back">Return Home</a>
+    <div class="footer-explore">
+        <a href="index.html" class="btn-home">← Back to Homepage</a>
+    </div>
 
 </body>
 </html>
